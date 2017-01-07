@@ -34,12 +34,14 @@ var makeFraction = function(numerator, denominator){
 			  defaultWidth, defaultHeight / denominator, color2);
 			}
 		}
+		if (newNumerator != 0) {
 		for (var l = 0; l < denominator; l++){
 			if (denominator - newNumerator > l) {color1 = "white"} 
 			else {color1 = "red"};
 			makeRectangle(startXAxis + (wholeNumber) * defaultMargin, 
 			  startYAxis + l * defaultHeight / denominator, 
 			  defaultWidth, defaultHeight / denominator, color1);
+		}
 		}
 	} else {
 		for (var i = 0; i < denominator; i++){
